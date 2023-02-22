@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac544578-d56b-49f5-a33e-61463b0f4c52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apigateway/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigateway/local_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/validator.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,54 @@
       <recent name="$PROJECT_DIR$/types" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestValidField in github.com/maelsilva96/lambda_utils/tests">
+    <configuration name="TestValidArrayField in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lambda_utils" />
+      <working_directory value="$PROJECT_DIR$/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/maelsilva96/lambda_utils/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestValidArrayField\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestValidField in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lambda_utils" />
+      <working_directory value="$PROJECT_DIR$/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/maelsilva96/lambda_utils/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestValidField\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestValidFieldWithMinChars in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lambda_utils" />
+      <working_directory value="$PROJECT_DIR$/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/maelsilva96/lambda_utils/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestValidFieldWithMinChars\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestValidField in github.com/maelsilva96/lambda_utils/tests" />
+        <item itemvalue="Go Test.TestValidArrayField in github.com/maelsilva96/lambda_utils/tests" />
+        <item itemvalue="Go Test.TestValidFieldWithMinChars in github.com/maelsilva96/lambda_utils/tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
