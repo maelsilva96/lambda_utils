@@ -1,8 +1,7 @@
 package types
 
 import (
-	"fmt"
-	"strings"
+	"github.com/maelsilva96/lambda_utils/entities"
 )
 
 type UserNameAlreadyExists struct {
@@ -14,25 +13,21 @@ func (err *UserNameAlreadyExists) Error() string {
 }
 
 type FieldError struct {
-	errorMessages map[string][]string
+	fieldsWithError []entities.FieldError
 }
 
-func NewFieldError(errors map[string][]string) *FieldError {
+func NewFieldError(errors []entities.FieldError) *FieldError {
 	return &FieldError{
-		errorMessages: errors,
+		fieldsWithError: errors,
 	}
 }
 
 func (m *FieldError) Error() string {
-	message := ""
-	for n, messages := range m.errorMessages {
-		message += fmt.Sprintf("O campo (%s) tem os seguintes erros: %s\n", n, strings.Join(messages, ","))
-	}
-	return message
+	return "Fields with error!"
 }
 
-func (m *FieldError) GetErrors() map[string][]string {
-	return m.errorMessages
+func (m *FieldError) GetErrors() []entities.FieldError {
+	return m.fieldsWithError
 }
 
 type TokenNotFound struct{}
