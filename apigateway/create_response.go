@@ -44,7 +44,7 @@ func (resp *Response) CreateResponse(statusCode int, body entities.ResponseBody)
 	}
 	return events.APIGatewayProxyResponse{
 		StatusCode: statusCode,
-		Headers:    headers,
+		Headers:    resp.headers,
 		Body:       string(data),
 	}
 }
