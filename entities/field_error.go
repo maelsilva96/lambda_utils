@@ -11,6 +11,7 @@ const (
 	ChangePasswordCode ErrorCode = 5
 	ExpiredCode        ErrorCode = 6
 	TokenNotFoundCode  ErrorCode = 7
+	ExistingUser       ErrorCode = 8
 )
 
 type FieldError struct {

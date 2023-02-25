@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac544578-d56b-49f5-a33e-61463b0f4c52" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apigateway/create_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/create_response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigateway/local_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/local_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/field_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/entities/field_error.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +59,8 @@
       <recent name="$PROJECT_DIR$/model" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestValidField in github.com/maelsilva96/lambda_utils/tests">
-    <configuration name="TestValidArrayField in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestHandlerAddHeaderResponse in github.com/maelsilva96/lambda_utils/tests">
+    <configuration name="TestCreateBodyNil in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="lambda_utils" />
       <working_directory value="$PROJECT_DIR$/tests" />
       <root_directory value="$PROJECT_DIR$" />
@@ -66,7 +69,43 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestValidArrayField\E$" />
+      <pattern value="^\QTestCreateBodyNil\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCreateBodyNotEmpty in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lambda_utils" />
+      <working_directory value="$PROJECT_DIR$/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/maelsilva96/lambda_utils/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCreateBodyNotEmpty\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHandlerAddHeaderResponse in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lambda_utils" />
+      <working_directory value="$PROJECT_DIR$/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/maelsilva96/lambda_utils/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestHandlerAddHeaderResponse\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHandlerRequest in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lambda_utils" />
+      <working_directory value="$PROJECT_DIR$/tests" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/maelsilva96/lambda_utils/tests" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestHandlerRequest\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestValidField in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -81,23 +120,13 @@
       <pattern value="^\QTestValidField\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestValidFieldWithMinChars in github.com/maelsilva96/lambda_utils/tests" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="lambda_utils" />
-      <working_directory value="$PROJECT_DIR$/tests" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/maelsilva96/lambda_utils/tests" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestValidFieldWithMinChars\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestHandlerAddHeaderResponse in github.com/maelsilva96/lambda_utils/tests" />
+        <item itemvalue="Go Test.TestHandlerRequest in github.com/maelsilva96/lambda_utils/tests" />
+        <item itemvalue="Go Test.TestCreateBodyNotEmpty in github.com/maelsilva96/lambda_utils/tests" />
+        <item itemvalue="Go Test.TestCreateBodyNil in github.com/maelsilva96/lambda_utils/tests" />
         <item itemvalue="Go Test.TestValidField in github.com/maelsilva96/lambda_utils/tests" />
-        <item itemvalue="Go Test.TestValidArrayField in github.com/maelsilva96/lambda_utils/tests" />
-        <item itemvalue="Go Test.TestValidFieldWithMinChars in github.com/maelsilva96/lambda_utils/tests" />
       </list>
     </recent_temporary>
   </component>
@@ -107,5 +136,21 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/apigateway/create_response.go</url>
+          <line>36</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/apigateway/create_response.go</url>
+          <line>44</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -32,7 +32,7 @@ func (hand LocalHandler) SetPort(port int) {
 	hand.port = port
 }
 
-func (hand LocalHandler) handlerProcess(w http.ResponseWriter, r *http.Request) {
+func (hand LocalHandler) HandlerProcess(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 	var requestBody events.APIGatewayProxyRequest
 	reqBody, _ := io.ReadAll(r.Body)
@@ -46,7 +46,6 @@ func (hand LocalHandler) handlerProcess(w http.ResponseWriter, r *http.Request) 
 		log.Println(err)
 		return
 	}
-	w.WriteHeader(result.StatusCode)
 	if len(result.Headers) > 0 {
 		for key, val := range result.Headers {
 			if w.Header().Get(key) != "" {
@@ -55,6 +54,7 @@ func (hand LocalHandler) handlerProcess(w http.ResponseWriter, r *http.Request) 
 			w.Header().Set(key, val)
 		}
 	}
+	w.WriteHeader(result.StatusCode)
 	if result.Body != "" {
 		_, err = w.Write([]byte(result.Body))
 		if err != nil {
@@ -64,6 +64,6 @@ func (hand LocalHandler) handlerProcess(w http.ResponseWriter, r *http.Request) 
 }
 
 func (hand LocalHandler) Start() {
-	http.HandleFunc("/handler", hand.handlerProcess)
+	http.HandleFunc("/handler", hand.HandlerProcess)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf("%s:%d", hand.host, hand.port), nil))
 }

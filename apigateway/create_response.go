@@ -32,8 +32,14 @@ func (resp *Response) RemoveHeader(key string) {
 	delete(resp.headers, key)
 }
 
-func (resp *Response) CreateResponse(statusCode int, body entities.ResponseBody) events.APIGatewayProxyResponse {
-	data, err := json.Marshal(body)
+func (resp *Response) CreateResponse(statusCode int, body *entities.ResponseBody) events.APIGatewayProxyResponse {
+	if body == nil {
+		return events.APIGatewayProxyResponse{
+			StatusCode: statusCode,
+			Headers:    resp.headers,
+		}
+	}
+	data, err := json.Marshal(*body)
 	if err != nil {
 		log.Println(err)
 		return events.APIGatewayProxyResponse{
