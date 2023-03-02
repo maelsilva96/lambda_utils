@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac544578-d56b-49f5-a33e-61463b0f4c52" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/create_response.go" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/create_response.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigateway/local_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/apigateway/local_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/field_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/entities/field_error.go" afterDir="false" />
-    </list>
+    <list default="true" id="ac544578-d56b-49f5-a33e-61463b0f4c52" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +40,7 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/ismaelsilva/projects/lambda_utils/types",
+    "last_opened_file_path": "/Users/ismaelsilva/projects/lambda_utils",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
@@ -136,21 +131,5 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/apigateway/create_response.go</url>
-          <line>36</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/apigateway/create_response.go</url>
-          <line>44</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
