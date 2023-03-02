@@ -13,6 +13,7 @@ const (
 	TokenNotFoundCode   ErrorCode = 7
 	ExistingUser        ErrorCode = 8
 	InvalidPasswordCode ErrorCode = 9
+	UserNotFoundCode    ErrorCode = 10
 )
 
 type FieldError struct {
